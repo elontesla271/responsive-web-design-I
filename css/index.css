@@ -77,6 +77,13 @@ h1, h2, h3, h4, h5 {
 	color: #BCBCBC;
 }
 
+.entry-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 75%;
+}
+
 .bar-entry {
 	width: 16%;
 	display: inline-block;
