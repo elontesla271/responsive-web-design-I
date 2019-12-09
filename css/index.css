@@ -86,7 +86,6 @@ h1, h2, h3, h4, h5 {
 
 .bar-entry {
 	width: 16%;
-	display: inline-block;
 }
 
 @media(max-width: 500px) {
@@ -94,7 +93,7 @@ h1, h2, h3, h4, h5 {
 		flex-direction: column-reverse;
 	}
 	.entry-container {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		width: 100%;
 	}
 	#top .bar-entry,.idea-image-container {
@@ -102,6 +101,20 @@ h1, h2, h3, h4, h5 {
 		width: 100%;
 		padding: 20px 0px;
 		text-align: center;
+	}
+}
+
+@media(max-width: 800px) {
+	#top {
+		flex-direction: column-reverse;
+	}
+	.entry-container {
+		width: 100%;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+	.idea-image-container {
+		margin-top: 20px;
 	}
 }
 
