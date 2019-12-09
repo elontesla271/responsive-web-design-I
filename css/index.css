@@ -67,14 +67,19 @@ h1, h2, h3, h4, h5 {
 }
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+html {
+	font-size: 62.5%;
+}
+
 /* index top*/
 
 #top {
-	margin-bottom: 50px;
+	margin-bottom: 5%;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
 	color: #BCBCBC;
+	font-size: 2rem;
 }
 
 .entry-container {
@@ -97,9 +102,9 @@ h1, h2, h3, h4, h5 {
 		width: 100%;
 	}
 	#top .bar-entry,.idea-image-container {
-		border-bottom: 1px solid black;
+		border-bottom: 0.1rem solid black;
 		width: 100%;
-		padding: 20px 0px;
+		padding: 3% 0%;
 		text-align: center;
 	}
 }
@@ -111,10 +116,10 @@ h1, h2, h3, h4, h5 {
 	.entry-container {
 		width: 100%;
 		justify-content: space-between;
-		margin-top: 20px;
+		margin-top: 3%;
 	}
 	.idea-image-container {
-		margin-top: 20px;
+		margin-top: 3%;
 	}
 }
 
@@ -123,7 +128,7 @@ h1, h2, h3, h4, h5 {
 #bottom {
 	display: flex;
 	flex-direction: row;
-	padding: 10px 0px;
+	padding: 1% 0%;
 }
 
 #center-text-container {
@@ -132,15 +137,15 @@ h1, h2, h3, h4, h5 {
 }
 
 #innovation {
-	font-size: 80px;
+	font-size: 8rem;
 }
 
 #started {
-	border: 1px solid black;
-	font-size: 20px;
-	width: 200px;
-	height: 40px;
-	margin: 0px auto;
+	border: 0.1rem solid black;
+	font-size: 2rem;
+	width: 20rem;
+	height: 4rem;
+	margin: 0% auto;
 	padding-top: 10px;
 }
 
@@ -162,7 +167,7 @@ h1, h2, h3, h4, h5 {
 		width: 100%;
 	}
 	#bottom {
-		padding: 40px 0px;
+		padding: 3% 0%;
 	}
 	#code-image-container {
 		display: none;
@@ -175,17 +180,18 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-size: 1.6rem;
 }
 
 #bottom-top {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 20px;
+	margin-bottom: 2%;
 }
 
 .bottom-top-entry {
-	margin-top: 30px;
-	padding: 0px 10px;
+	margin-top: 3%;
+	padding: 0% 1%;
 }
 
 @media(max-width: 500px) {
@@ -193,13 +199,13 @@ h1, h2, h3, h4, h5 {
 		flex-direction: column;
 	}
 	.bottom-top-entry,#middle-img-container {
-		margin: 20px 0px;
-		padding: 0px 0px;
+		margin: 2% 0%;
+		padding: 0% 0%;
 	}
 }
 
 .middle-img {
-	margin: 0px auto;
+	margin: 0% auto;
 	display: block;
 }
 
@@ -209,8 +215,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .bottom-bottom-entry {
-	margin: 30px 0px;
-	padding: 0px 10px;
+	margin: 3% 0%;
+	padding: 0% 1%;
 }
 
 .bottom-bottom-entry a {
@@ -223,44 +229,45 @@ h1, h2, h3, h4, h5 {
 		flex-direction: column;
 	}
 	.bottom-bottom-entry {
-		margin: 20px 0px;
-		padding: 0px;
+		margin: 3% 0%;
+		padding: 0%;
 	}
 }
 
 /*footer*/
 
 #contact {
-	margin-top: 30px;
+	margin-top: 3%;
+	font-size: 1.6rem;
 }
 
 #contact address {
-	margin-left: 30px;
+	margin-left: 3%;
 }
 
 @media(max-width: 500px) {
 	#contact address {
-		margin: 0px;
+		margin: 0%;
 	}
 }
 
 @media(max-width: 800px) {
 	#contact address {
-		margin: 10px;
+		margin: 1%;
 	}
 }
 
 #state {
-	margin-bottom: 20px;
+	margin-bottom: 2%;
 }
 
 #phone {
-	margin-bottom: 20px;
+	margin-bottom: 2%;
 }
 
 #copyright {
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 4%;
 }
 
 /*services portion*/
