@@ -89,17 +89,37 @@ h1, h2, h3, h4, h5 {
 	display: inline-block;
 }
 
+@media(max-width: 500px) {
+	#top {
+		flex-direction: column-reverse;
+	}
+	.entry-container {
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+	#top .bar-entry,.idea-image-container {
+		border-bottom: 1px solid black;
+		width: 100%;
+		padding: 20px 0px;
+		text-align: center;
+	}
+}
+
 /*index circle image*/
 
-#center-text {
-	float: left;
+#bottom {
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0px;
+}
+
+#center-text-container {
 	width: 50%;
 	text-align: center;
 }
 
 #innovation {
 	font-size: 80px;
-	margin-top: 50px;
 }
 
 #started {
@@ -109,6 +129,31 @@ h1, h2, h3, h4, h5 {
 	height: 40px;
 	margin: 0px auto;
 	padding-top: 10px;
+}
+
+#code-image-container {
+	width: 50%;
+}
+
+@media(max-width: 500px) {
+	#center-text-container {
+		width: 100%;
+	}
+	#code-image-container {
+		display: none;
+	}
+}
+
+@media(max-width: 800px) {
+	#center-text-container {
+		width: 100%;
+	}
+	#bottom {
+		padding: 40px 0px;
+	}
+	#code-image-container {
+		display: none;
+	}
 }
 
 /*index rectange image*/
@@ -122,11 +167,22 @@ h1, h2, h3, h4, h5 {
 #bottom-top {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 20px;
 }
 
 .bottom-top-entry {
-	margin: 30px 0px;
-	padding: 0px 30px;
+	margin-top: 30px;
+	padding: 0px 10px;
+}
+
+@media(max-width: 500px) {
+	#bottom-top {
+		flex-direction: column;
+	}
+	.bottom-top-entry,#middle-img-container {
+		margin: 20px 0px;
+		padding: 0px 0px;
+	}
 }
 
 .middle-img {
@@ -141,8 +197,25 @@ h1, h2, h3, h4, h5 {
 
 .bottom-bottom-entry {
 	margin: 30px 0px;
-	padding: 0px 30px;
+	padding: 0px 10px;
 }
+
+.bottom-bottom-entry a {
+	color: black;
+	text-decoration: none;
+}
+
+@media(max-width: 500px) {
+	#bottom-bottom {
+		flex-direction: column;
+	}
+	.bottom-bottom-entry {
+		margin: 20px 0px;
+		padding: 0px;
+	}
+}
+
+/*footer*/
 
 #contact {
 	margin-top: 30px;
@@ -150,6 +223,18 @@ h1, h2, h3, h4, h5 {
 
 #contact address {
 	margin-left: 30px;
+}
+
+@media(max-width: 500px) {
+	#contact address {
+		margin: 0px;
+	}
+}
+
+@media(max-width: 800px) {
+	#contact address {
+		margin: 10px;
+	}
 }
 
 #state {
