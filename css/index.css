@@ -153,6 +153,11 @@ html {
 	width: 50%;
 }
 
+#code-image-container img {
+	margin: 0% auto;
+	display: block;
+}
+
 @media(max-width: 500px) {
 	#center-text-container {
 		width: 100%;
